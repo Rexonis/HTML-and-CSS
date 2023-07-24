@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+.container {
+    width: 1200px;
+}
+article {
+    display: grid;
+    grid-template: 70px 150px 70px 110px 700px 110px / 150px 1fr 100px;
+    grid-template-areas:
+        ". h1 ."
+        "p1 p2 ." 
+        "b b ." 
+        ". p3 ."
+        "img img img"
+        ". p4 ."
+}
+h1 {
+    grid-area: h1;
+}
+.aside {
+    grid-area: p1;
+    margin-left: 10%;
+    margin-top: 40%;
+    width: 7em;
+    font-style: italic;
+}
+blockquote {
+    color: rgb(70, 10, 180);
+    grid-area: b;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 7%;
+}
+figure {
+    grid-area: img;
+}
+.p2 {
+    grid-area: p2;
+}
+.p3 {
+    grid-area: p3;
+}
+.p4 {
+    grid-area: p4;
+}
+figcaption {
+    font-size: 14px;
+    font-style: italic;
+}
